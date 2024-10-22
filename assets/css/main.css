@@ -180,7 +180,25 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 70em;
+		/*width: 70em;*/
+		display: flex; /* Adiciona flexbox para organizar os itens lado a lado */
+		align-items: flex-start; /* Alinha os itens verticalmente no centro */
+		justify-content: flex-start; /* Alinha os itens no início da linha */
+		flex-wrap: nowrap; /* Permite que os itens quebrem de linha em telas menores */
+	}
+
+		/* O texto deve ocupar o restante do espaço ao lado da imagem */
+	.container > div {
+		flex-grow: 1; /* Faz o texto ocupar o espaço restante ao lado da imagem */
+		/*flex-shrink: 1; /* Permite que o bloco de texto encolha em telas menores */
+		min-width: 0; /* Garante que o texto não force o container a expandir */
+	}
+
+	/* Responsividade em telas pequenas */
+	@media screen and (max-width: 736px) {
+		.container {
+			flex-direction: column; /* Para telas menores, coloca imagem e texto em coluna */
+		}
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1719,6 +1737,42 @@ input, select, textarea {
 			float: left;
 			margin: 0 2em 2em 0;
 		}
+
+	.image-personal {
+		/*display: inline-block;
+		outline: 0;*/
+		/*flex-basis: 650px; /* Tamanho fixo para a imagem */
+		flex: 0 0 150px; /* Garante que a imagem tenha uma largura fixa e não encolha */
+		margin-right: 20px; /* Espaçamento à direita da imagem */
+	}	
+
+		/* Estilo das imagens pessoais */
+		.image-personal img {
+			width: 100%;  /* Define uma largura fixa */
+			height: auto;  /* Mantém a proporção da imagem */
+			/*border-radius: 50%; /* Deixa a imagem em formato circular */
+		}
+
+		.image-personal.centered {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image-personal.centered img {
+				margin: 0 auto;
+				width: auto;
+			}
+
+		.image-personal.featured {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		.image-personal.left {
+			float: left;
+			margin: 0 2em 2em 0;
+		}		
 
 /* List */
 

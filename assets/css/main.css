@@ -1810,6 +1810,42 @@ input, select, textarea {
 			margin: 0 2em 2em 0;
 		}		
 
+		.image-book {
+			/*display: inline-block;
+			outline: 0;*/
+			/*flex-basis: 650px; /* Tamanho fixo para a imagem */
+			flex: 0 0 220px; /* Garante que a imagem tenha uma largura fixa e não encolha */
+			margin-right: 20px; /* Espaçamento à direita da imagem */
+		}	
+	
+			/* Estilo das imagens pessoais */
+			.image-book img {
+				width: 100%;  /* Define uma largura fixa */
+				height: auto;  /* Mantém a proporção da imagem */
+				/*border-radius: 50%; /* Deixa a imagem em formato circular */
+			}
+	
+			.image-book.centered {
+				display: block;
+				margin: 0 0 2em 0;
+			}
+	
+				.image-bookl.centered img {
+					margin: 0 auto;
+					width: auto;
+				}
+	
+			.image-book.featured {
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+	
+			.image-book.left {
+				float: left;
+				margin: 0 2em 2em 0;
+			}		
+
 /* List */
 
 	ul {

@@ -1456,6 +1456,24 @@ input, select, textarea {
 
 		}
 
+		.same-height-row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.same-height-row > .col-8,
+		.same-height-row > .col-4 {
+			display: flex;
+			flex-direction: column;
+			justify-content: stretch;
+		}
+		
+		.same-height-row > .col-8 .box,
+		.same-height-row > .col-4 .box {
+			height: 100%;
+		}
+			
+
 /* Form */
 
 	form label {
@@ -1727,11 +1745,29 @@ input, select, textarea {
 				width: auto;
 			}
 
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
+			.image.featured {
+				display: block;
+				width: 100%;
+				height: 350px; /* Ajuste essa altura para o valor desejado */
+				object-fit: cover; /* Garante que a imagem se ajuste ao contêiner mantendo a proporção */
+				margin: 0 0 2em 0;
+			}	
+			
+			.image.featured-interests {
+				display: block;
+				width: 100%;
+				height: 250px; /* Ajuste essa altura para o valor desejado */
+				object-fit: cover; /* Garante que a imagem se ajuste ao contêiner mantendo a proporção */
+				margin: 0 0 2em 0;
+			}
+			
+			.image.featured-gardel-posts {
+				display: block;
+				width: 100%;
+				height: 450px; /* Ajuste essa altura para o valor desejado */
+				object-fit: cover; /* Garante que a imagem se ajuste ao contêiner mantendo a proporção */
+				margin: 0 0 2em 0;
+			}
 
 		.image.left {
 			float: left;

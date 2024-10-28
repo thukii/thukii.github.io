@@ -1637,6 +1637,73 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+	.box-topicos-estudos {
+		background: #ffffff;
+		border-bottom: solid 1px #ccc;
+		padding: 2.75em 1.75em 2.75em 1.75em;
+	}
+	
+		.box-topicos-estudos .image.featured {
+			position: relative;
+			width: auto;
+			left: 1.75em;
+			top: 1.75em;
+			margin: -4.5em 0 4.25em -3.5em;
+		}
+	
+		.box-topicos-estudos.post header {
+			padding-top: 1em;
+			margin: 0 0 2em 0;
+		}
+	
+		.box-topicos-estudos.post h2 {
+			font-size: 2.5em;
+			letter-spacing: -0.015em;
+		}
+	
+		.box-topicos-estudos.post header > p {
+			margin-top: 1.25em;
+			font-size: 1.25em;
+		}
+	
+		.box-topicos-estudos footer ul.actions {
+			margin-bottom: 0;
+		}
+
+		/*--------------------------------------------------------------*/
+
+
+		
+		.box-topicos-estudos .image.featured {
+			width: 100%;
+			height: 300px; /* Altura da imagem */
+			object-fit: cover;
+			margin: -40px 0 40px -30px;
+			/* margin: 0 0 5.5em 0; /* Aumenta a margem inferior para separar da área do título */
+		}
+		
+		.box-topicos-estudos header {
+			flex-shrink: 0; /* Impede que o título expanda */
+			text-align: center;
+			margin: 0;
+		}
+		
+		.box-topicos-estudos header h3 {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			height: 2.4em; /* Altura fixa para o título em até duas linhas */
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: normal;
+			margin: 0 0 1em 0; /* Espaço entre o título e o botão */
+		}
+		
+		.box-topicos-estudos footer {
+			margin-top: auto; /* Mantém o botão na parte inferior */
+			text-align: center;
+		}
+
+
 /* Button */
 
 	input[type="button"],
@@ -1744,14 +1811,22 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
-
+			
 			.image.featured {
 				display: block;
 				width: 100%;
+				height: 350px; /* Ajuste a altura da imagem para deixar espaço para o título e botão */
+				object-fit: cover;
+				margin: 0 0 -2.5em 0;
+			}
+
+			/*.image.featured {
+				display: block;
+				width: 100%;
 				height: 350px; /* Ajuste essa altura para o valor desejado */
-				object-fit: cover; /* Garante que a imagem se ajuste ao contêiner mantendo a proporção */
-				margin: 0 0 2em 0;
-			}	
+			/*	object-fit: cover; /* Garante que a imagem se ajuste ao contêiner mantendo a proporção */
+			/*	margin: 0 0 2em 0;
+			}*/	
 			
 			.image.featured-interests {
 				display: block;
@@ -1764,7 +1839,7 @@ input, select, textarea {
 			.image.featured-gardel-posts {
 				display: block;
 				width: 100%;
-				height: 450px; /* Ajuste essa altura para o valor desejado */
+				height: 475px; /* Ajuste essa altura para o valor desejado */
 				object-fit: cover; /* Garante que a imagem se ajuste ao contêiner mantendo a proporção */
 				margin: 0 0 2em 0;
 			}
@@ -1846,6 +1921,8 @@ input, select, textarea {
 				margin: 0 2em 2em 0;
 			}		
 
+
+			
 /* List */
 
 	ul {
@@ -2605,6 +2682,19 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
+			.box-topicos-estudos footer ul.actions li {
+				margin: 1em 0 0 0;
+				display: block;
+			}
+				
+				.box-topicos-estudos footer ul.actions li .button {
+					width: 100%;
+				}
+				
+				.box-topicos-estudos footer ul.actions li:first-child {
+					margin-top: 0;
+				}
+				
 		/* Header */
 
 			#header {
@@ -2908,6 +2998,25 @@ input, select, textarea {
 					margin-top: 0;
 					font-size: 1em;
 				}
+
+			.box-topicos-estudos {
+				padding: 25px 15px 20px 15px;
+			}
+	
+				.box-topicos-estudos.post header {
+					padding-top: 0;
+					margin: 0 0 1em 0;
+				}
+	
+				.box-topicos-estudos.post h2 {
+					font-size: 1.5em;
+					line-height: 1.5em;
+				}
+	
+				.box-topicos-estudos.post header > p {
+					margin-top: 0;
+					font-size: 1em;
+				}				
 
 		/* Divided */
 
